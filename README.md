@@ -19,10 +19,10 @@ Este aplicativo web oferece funcionalidades de cadastro e login para os usuário
 
 ## EXECUTANDO O PROJETO:
 1. **Configuração do Banco de Dados:**
-   - Antes de executar o site, é necessário importar o arquivo `DATABASE.sql` que está em `CODIGO/OUTROS`.
-     
+   - Antes de executar o site, é necessário importar o arquivo `DATABASE.sql` que está em `CODIGO/OUTROS`. 
+
 2. **Configuração do PHP:**
-   - Abra o arquivo `FORMULARIO.php` e ajuste as configurações do banco de dados:
+   - Abra o arquivo `./CODIGO/HTML - PHP/FORMULARIO.php` e ajuste as configurações do banco de dados:
 
      ```php
      $servidor = "localhost";
@@ -31,16 +31,23 @@ Este aplicativo web oferece funcionalidades de cadastro e login para os usuário
      $database = "registro";
      ```
 
-3. **Executando o Aplicativo:**
+3. **Executando o Aplicativo com Apache:**
    - Coloque os arquivos em um servidor web compatível com PHP (por exemplo, XAMPP, WAMP, LAMP).
-   - Acesse o formulário no navegador visitando `http://localhost/CODIGO/HTML-PHP/FORMULARIO.html`.
+   - Acesse o formulário no navegador visitando [http://localhost/CODIGO/HTML%20-%20PHP/FORMULARIO.html](http://localhost/CODIGO/HTML%20-%20PHP/FORMULARIO.html).
 
-4. **Cadastro:**
+4. **Executando o Aplicativo com `php.exe`:**
+   - Alternativamente, você pode iniciar o servidor diretamente no diretório `./CODIGO` com o comando abaixo:
+   ```bash
+   php -S localhost:8080
+   ```
+   - Em seguida, acesse o formulário no navegador através do endereço: [http://localhost:8080/HTML%20-%20PHP/FORMULARIO.html](http://localhost:8080/HTML%20-%20PHP/FORMULARIO.html).
+
+5. **Cadastro:**
    - Preencha o campo "SEU EMAIL" com seu endereço de e-mail.
    - Digite uma senha no campo "SUA SENHA".
    - Clique no botão "CADASTRAR" para criar sua conta.
 
-5. **Login:**
+6. **Login:**
    - Insira o e-mail cadastrado no campo "SEU EMAIL".
    - Digite a senha associada à sua conta no campo "SUA SENHA".
    - Clique no botão "LOGIN" para acessar sua conta.
